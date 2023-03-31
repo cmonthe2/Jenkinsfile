@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Submit Stack') {
             steps {
-            sh "aws cloudformation create --template-file monthe.yml --stack-name patrick"
+            sh "aws cloudformation deploy --template-file template.yaml --stack-name static-website"
               }
              }
             }
